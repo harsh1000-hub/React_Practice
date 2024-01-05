@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 function App() { 
+  // below is my intial state
   const [tasks,setTasks]=useState([])     // usestate use there
-  const [taskQuery,setTaskQuery]=useState("harsh")  // render to input box
-  const [descriptionQuery,setDescriptionQuery]=useState("To do something")
+  const [taskQuery,setTaskQuery]=useState("")  // render to input box with empty string
+  const [descriptionQuery,setDescriptionQuery]=useState("") // render to input box with empty string
   function handleAddTask(task){
     const newTask = {
         name:task.name,
